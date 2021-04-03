@@ -1,10 +1,11 @@
 plugins {
     kotlin("multiplatform") version "1.4.32"
     id("maven-publish")
+   // id("convention.publication")
 }
 
-group = "me.annazharkova"
-version = "1.0.1"
+group = "com.azharkova"
+version = "1.0.3"
 
 repositories {
     jcenter()
@@ -21,10 +22,17 @@ kotlin {
         }
     }
     val hostOs = System.getProperty("os.name")
-    val iosTarget = when {
+    /*val iosTarget = when {
         hostOs == "X64"-> iosX64("ios")
         hostOs == "arm64" -> iosArm64("ios")
         else -> iosX64("ios")
+    }*/
+    ios {
+        binaries {
+            framework {
+                baseName = "library"
+            }
+        }
     }
     
     sourceSets {

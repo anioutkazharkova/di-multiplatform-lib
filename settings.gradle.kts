@@ -6,6 +6,6 @@ pluginManagement {
         mavenCentral()
     }
 }
-
+//includeBuild("convention-plugins")
 rootProject.name = "di-multiplatform-lib"
 
