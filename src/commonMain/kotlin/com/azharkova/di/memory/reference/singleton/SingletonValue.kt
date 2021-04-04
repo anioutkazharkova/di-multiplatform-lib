@@ -21,4 +21,4 @@ class SingletonValue<T:Any>(private val clazz: KClass<T>,
     }
 }
 
-inline fun <reified T:Any> single(container: DIContainer = DIContainer.Factory, noinline fabric: () -> T?) = CachedValue(T::class,container,fabric)
+public inline fun <reified T:Any> single(container: DIContainer = DIContainer.Factory, noinline fabric: () -> T?) = CachedValue(T::class,container,fabric)

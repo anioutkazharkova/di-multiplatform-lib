@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.azharkova"
-version = "1.0.3"
+version = "1.0.4.5"
 
 repositories {
     jcenter()
