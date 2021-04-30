@@ -4,7 +4,7 @@ plugins {
    // id("convention.publication")
 }
 
-group = "com.azharkova"
+group = "io.github.anioutkazharkova"
 version = "1.0.4.5"
 
 repositories {
