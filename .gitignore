@@ -13,5 +13,6 @@ captures
 .externalNativeBuild
 .cxx
 local.properties
+convention-plugins/local.properties
 xcuserdata/
 Pods/
