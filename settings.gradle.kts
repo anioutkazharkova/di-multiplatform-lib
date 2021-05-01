@@ -1,11 +1,10 @@
 pluginManagement {
     repositories {
         google()
-        jcenter()
         gradlePluginPortal()
         mavenCentral()
     }
 }
-//includeBuild("convention-plugins")
+includeBuild("convention-plugins")
 rootProject.name = "di-multiplatform-lib"
 

@@ -7,9 +7,9 @@ import kotlin.native.concurrent.ThreadLocal
 import kotlin.reflect.KClass
 
 public interface ContainerProtocol {
-   fun <T : Any> register(type: String?, scope: ScopeType = ScopeType.Graph, fabric: () -> T?)
+    fun <T : Any> register(type: String?, scope: ScopeType = ScopeType.Graph, fabric: () -> T?)
 
-  fun <T : Any> resolve(type: String?): T?
+    fun <T : Any> resolve(type: String?): T?
 }
 
 public class DIContainer : ContainerProtocol {

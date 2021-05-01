@@ -1,14 +1,13 @@
 plugins {
     kotlin("multiplatform") version "1.4.32"
-    id("maven-publish")
-   // id("convention.publication")
+    //id("maven-publish")
+    id("convention.publication")
 }
 
 group = "io.github.anioutkazharkova"
 version = "1.0.4.5"
 
 repositories {
-    jcenter()
     mavenCentral()
 }
 
