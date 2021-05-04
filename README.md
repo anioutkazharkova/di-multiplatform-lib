@@ -1,3 +1,5 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib)
+
 # Multiplatform-DI library for Kotlin Multiplatform
 
 Lightweight dependency injection framework for Kotlin Multiplatform application
