@@ -20,7 +20,25 @@ Yes! It works even with iOS, in all cases.
 
 ## Installation
 
-Just add a dependency into your build.gradle.kts in shared module 
+Just add a dependency into your build.gradle.kts in shared module.
+Available in maven central.
+```
+//build.gradle.kts
+
+ repositories {
+      mavenCentral()
+    }
+/*....*/
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven(url = "https://jitpack.io")
+    }
+}
+```
+
 ```
  dependencies {
        implementation("io.github.anioutkazharkova:di-multiplatform-lib:1.0.4.5")
