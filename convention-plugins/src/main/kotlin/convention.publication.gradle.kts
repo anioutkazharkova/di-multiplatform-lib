@@ -15,6 +15,8 @@ ext["signingPassword"] = null
 ext["signingSecretKeyRingFile"] = null
 ext["ossrhUsername"] = null
 ext["ossrhPassword"] = null
+ext["githubActor"] = null
+ext["githubToken"] = null
 
 // Grabbing secrets from local.properties file or from environment variables, which could be used on CI
 val secretPropsFile = project.rootProject.file("local.properties")
@@ -32,6 +34,8 @@ if (secretPropsFile.exists()) {
     ext["signing.secretKeyRingFile"] = System.getenv("SIGNING_SECRET_KEY_RING_FILE")
     ext["ossrhUsername"] = System.getenv("OSSRH_USERNAME")
     ext["ossrhPassword"] = System.getenv("OSSRH_PASSWORD")
+    ext["githubActor"] = System.getenv("GITHUB_ACTOR")
+    ext["githubToken"] = System.getenv("GITHUB_TOKEN")
 }
 
 val javadocJar by tasks.registering(Jar::class) {
@@ -53,10 +57,10 @@ publishing {
         }
      maven {
       name = "GitHubPackages"
-      url = "https://maven.pkg.github.com/anioutkazharkova/di-multiplatform-lib"
+         setUrl("https://maven.pkg.github.com/anioutkazharkova/di-multiplatform-lib")
       credentials {
-        username = System.getenv("GITHUB_ACTOR")
-        password = System.getenv("GITHUB_TOKEN")
+        username = getExtraString("githubActor")
+        password = getExtraString("githubToken")
       }
     }
     }
