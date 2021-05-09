@@ -1,6 +1,7 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib)
 
-<a href="https://www.buymeacoffee.com/azharkova" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/anioutkazharkova/di-multiplatform-lib?include_prereleases)
+
 
 # Multiplatform-DI library for Kotlin Multiplatform
 
@@ -128,3 +129,6 @@ class Util{
     }()
 }
 ```
+
+
+<a href="https://www.buymeacoffee.com/azharkova" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
