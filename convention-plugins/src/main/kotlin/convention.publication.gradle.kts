@@ -51,6 +51,14 @@ publishing {
                 password = getExtraString("ossrhPassword")
             }
         }
+     maven {
+      name = "GitHubPackages"
+      url = "https://maven.pkg.github.com/anioutkazharkova/di-multiplatform-lib"
+      credentials {
+        username = System.getenv("GITHUB_ACTOR")
+        password = System.getenv("GITHUB_TOKEN")
+      }
+    }
     }
 
     // Configure all publications
