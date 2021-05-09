@@ -1,4 +1,5 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib) ![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/anioutkazharkova/di-multiplatform-lib?include_prereleases) ![GitHub last commit](https://img.shields.io/github/last-commit/anioutkazharkova/di-multiplatform-lib)
+![GitHub stars](https://img.shields.io/github/stars/anioutkazharkova/di-multiplatform-lib?style=social) ![GitHub forks](https://img.shields.io/github/forks/anioutkazharkova/di-multiplatform-lib?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/anioutkazharkova/di-multiplatform-lib?style=social) ![GitHub followers](https://img.shields.io/github/followers/anioutkazharkova?style=social)
 
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fanioutkajarkova)
 
