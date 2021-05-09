@@ -1,6 +1,4 @@
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib)
-
-![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/anioutkazharkova/di-multiplatform-lib?include_prereleases)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.anioutkazharkova/di-multiplatform-lib) ![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/anioutkazharkova/di-multiplatform-lib?include_prereleases)
 
 
 # Multiplatform-DI library for Kotlin Multiplatform
