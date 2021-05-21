@@ -67,7 +67,10 @@ allprojects {
 
 You can also use this [KMM DI template](https://github.com/anioutkazharkova/kmm-di-template) to create your app with integrated DI. More info in [wiki](https://github.com/anioutkazharkova/kmm-di-template/wiki)
 
-1. In case, you need to provide an access to DI library from native apps, create a class to manage registration and resolution of objects with DIContainer:
+Or you can also integrate if all by yourself. Just follow next steps: 
+
+1. First, you need to enable an access to DI library from native apps, because their is no direct access to dependencies in shared module. 
+You need create a class to manage registration and resolution of objects with DIContainer. It should be placed in commonMain of your shared module:
 ```
 class DIManager {
     val appContainer: DIContainer by lazy { DIContainer() }
@@ -81,7 +84,7 @@ class DIManager {
     }
 }
 ```
-2. Provide common configuration (used for both common and native apps):
+2. Provide common configuration (used for both common and native apps). Also place it in commonMain:
 ```
 class ConfigurationApp {
 val appContainer: DIManager = DIManager()
@@ -95,7 +98,7 @@ val appContainer: DIManager = DIManager()
     }
 }
 ```
-3. Register all your components from shared module: 
+3. Register all your components from shared module (also commonMain): 
 ```
  fun setup() {
         appContainer.addToScope(ScopeType.Container,NetworkClient::class) {
@@ -107,14 +110,14 @@ val appContainer: DIManager = DIManager()
         }
     }
 ```
-4. Resolve components from any place:
+4. Now you can resolve components from any place of your shared part:
 ```
 fun setup(di: DIManager) {
         this.moviesService = di.resolve<MoviesService>(MoviesService::class) as? MoviesService
         print(moviesService)
     }
 ```
-5. Call container from Android:
+5. Next, create a property to get access container in Android native app:
 ```
 @HiltAndroidApp
 class App : Application() {
@@ -131,7 +134,7 @@ class App : Application() {
     }
 }
 ```
-6. And from iOS:
+6. Repeat same for iOS:
 ```
 class Util{
     static var shared = Util()
@@ -145,3 +148,4 @@ class Util{
 }
 ```
 
+You can also use some decorations to your code (property wrappers, delegates and ets). Sample you can see [here](https://github.com/anioutkazharkova/kmm-di-template/)
