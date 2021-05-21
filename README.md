@@ -62,6 +62,9 @@ allprojects {
        implementation("io.github.anioutkazharkova:di-multiplatform-lib:1.0.4.5")
   }
   ```
+ ## Sample 
+ 
+ Check the ready-mady solution [here](https://github.com/anioutkazharkova/kmm-di-sample)
   
 ## Basic usage (good practice)
 
