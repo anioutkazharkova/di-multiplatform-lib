@@ -27,6 +27,10 @@ Yes! It works even with iOS, in all cases.
 - [x] Scopes 
 - [x] Easy register and resolve components  
 
+## Future
+- [ ] KSP injection 
+- [ ] Circullar dependencies
+
 ## Installation
 
 Just add a dependency into your build.gradle.kts in shared module.
