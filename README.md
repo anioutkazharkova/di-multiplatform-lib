@@ -64,7 +64,7 @@ allprojects {
   ```
  ## Sample 
  
- Check the ready-mady solution [here](https://github.com/anioutkazharkova/kmm-di-sample)
+ Check the ready-mady solution [here](https://github.com/anioutkazharkova/kmm-di-sample) It is a small client for Movies DB API with common BL and architecture
   
 ## Basic usage (good practice)
 
