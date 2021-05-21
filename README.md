@@ -13,7 +13,10 @@
 
 Lightweight dependency injection framework for Kotlin Multiplatform application
 
-Dependency injection (DI) is a software design pattern that implements Inversion of Control (IoC) for resolving dependencies. Multiplatform-DI helps you to use DI in your KMM application easily, to provide shared common architecture solution that works both in iOS and Android native applications.
+Dependency injection (DI) is a software design pattern that implements Inversion of Control (IoC) and Service Locator for resolving dependencies. It could be implemented many ways.
+More info about DI [here](https://developer.android.com/training/dependency-injection)
+
+Multiplatform-DI helps you to use DI in your KMM application easily, to provide shared common architecture solution that works both in iOS and Android native applications.
 Yes! It works even with iOS, in all cases. 
 
 ## Supports
@@ -61,6 +64,8 @@ allprojects {
   ```
   
 ## Basic usage (good practice)
+
+You can also use this [KMM DI template](https://github.com/anioutkazharkova/kmm-di-template) to create your app with integrated DI. More info in [wiki](https://github.com/anioutkazharkova/kmm-di-template/wiki)
 
 1. In case, you need to provide an access to DI library from native apps, create a class to manage registration and resolution of objects with DIContainer:
 ```
