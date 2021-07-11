@@ -23,6 +23,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/convention-plugins" />
+            <option value="$PROJECT_DIR$/di-multiplatform-core" />
+            <option value="$PROJECT_DIR$/ksp-multiplatform" />
+            <option value="$PROJECT_DIR$/ksp-multiplatform-apply" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

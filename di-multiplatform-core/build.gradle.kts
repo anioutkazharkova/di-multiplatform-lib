@@ -1,12 +1,7 @@
-plugins {
-    kotlin("multiplatform") version "1.5.10"
-   // id("com.google.devtools.ksp") version  "1.5.10-1.0.0-beta01"
-    id("maven-publish")
-    //id("convention.publication")
-}
 
-group = "io.github.anioutkazharkova"
-version = "1.0.5.1"
+plugins {
+    kotlin("multiplatform")
+}
 
 repositories {
     mavenCentral()
@@ -40,12 +35,11 @@ kotlin {
             }
         }
     }
-    
+
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":di-multiplatform-core"))
-               // implementation("com.google.devtools.ksp:symbol-processing-api:1.5.10-1.0.0-beta01")
+                // implementation("com.google.devtools.ksp:symbol-processing-api:1.5.10-1.0.0-beta01")
             }
         }
         val commonTest by getting {
@@ -55,10 +49,10 @@ kotlin {
             }
         }
         val jvmMain by getting {
-dependencies {
+            dependencies {
 
-    implementation("com.google.devtools.ksp:symbol-processing-api:1.5.10-1.0.0-beta01")
-}
+                implementation("com.google.devtools.ksp:symbol-processing-api:1.5.10-1.0.0-beta01")
+            }
         }
         val jvmTest by getting {
             dependencies {
