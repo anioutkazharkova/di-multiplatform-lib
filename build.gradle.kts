@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.4.32"
+    kotlin("multiplatform") version "1.7.20"
     //id("maven-publish")
     id("convention.publication")
 }
@@ -20,12 +20,6 @@ kotlin {
             useJUnit()
         }
     }
-    val hostOs = System.getProperty("os.name")
-    /*val iosTarget = when {
-        hostOs == "X64"-> iosX64("ios")
-        hostOs == "arm64" -> iosArm64("ios")
-        else -> iosX64("ios")
-    }*/
     ios {
         binaries {
             framework {

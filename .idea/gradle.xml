@@ -15,7 +15,7 @@
             </builds>
           </compositeBuild>
         </compositeConfiguration>
-        <option name="testRunner" value="PLATFORM" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8.3/libexec" />
@@ -25,8 +25,6 @@
             <option value="$PROJECT_DIR$/convention-plugins" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
