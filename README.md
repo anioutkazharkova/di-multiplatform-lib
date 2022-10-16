@@ -59,7 +59,7 @@ allprojects {
 
 ```
  dependencies {
-       implementation("io.github.anioutkazharkova:di-multiplatform-lib:1.0.4.5")
+       implementation("io.github.anioutkazharkova:di-multiplatform-lib:1.2.0")
   }
   ```
  ## Sample 
